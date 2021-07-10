@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    
+    <title>A&B</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!--    
+   <link rel="stylesheet" href="style.css" media="screen and (max-width:1024px)">
+   -->
+    
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    
+    <script>        
+        $(document).ready(function(){
+                     
+            AOS.init();
+            
+            //ao clicar no elemento #btn-menu
+            $("#btn-menu").click(function(){
+                
+                $("#menu").slideToggle();
+                $("#btn-menu").toggleClass("x","");
+                
+            });
+                        
+            
+        });        
+    </script>
+    
+    
+    <script>
+    
+       
+        
+    </script>
+
+</head>
+<body>
+   
+
+    
+    <header id="topo">
+        <div class="container flex-topo">
+            
+            <div id="logo" >
+                <img src="img/logo.png" alt="">
+            </div>
+            
+            <div id="btn-menu">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+
+            <nav id="menu">
+                <a href="index.html">Home</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="localizacao.html">Localização</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+            
+        </div>
+    </header>
+    
+    <div id="banner">
+        
+        <article id="texto-banner">
+            <h1 data-aos="fade-up" data-aos-delay="600">Lorem ipsum dolor sit amet</h1>
+            
+            <p data-aos="fade-up" data-aos-delay="900">Aliquam consequat, dui sit amet consectetur viverra, odio sem iaculis quam, quis facilisis orci elit eget urna. Aenean dictum iaculis magna, sit amet porta magna vehicula consequat. Donec semper viverra vehicula. Pellentesque a sapien quis purus imperdiet placerat.</p>
+            
+            <a href="#" data-aos="fade-up" data-aos-delay="1200">Conheça nossos serviços</a>            
+                                
+        </article>
+        
+         
+        
+    </div>
+    
+    <article class="container apresentacao" data-aos="fade-up">
+        
+        <h2>Aliquam consequat dui sit amet consectetur</h2>
+                
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates saepe vero deserunt neque repudiandae repellendus, veniam suscipit atque inventore distinctio iure, aperiam voluptatibus iste molestias, maiores harum eligendi ipsa totam.</p>
+    </article>
+    
+    <div id="imagem-faixa" data-aos="zoom-in" data-aos-delay="300"  data-aos-duration="2000">
+        <span>Lorem Ipsm dolor sit amet</span>
+    </div>
+    
+    <div class="container flex-colunas">
+        
+        <section class="coluna" data-aos="fade-up">
+            <h3>A Empresa</h3>
+            <img src="img/a-empresa.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            
+            <p>Ut enim ad minim veniam, quis nostrud. Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+            
+            <a href="#" class="botao">Saiba mais</a>
+        </section>
+        
+        <section class="coluna" data-aos="fade-up" data-aos-delay="300">
+            <h3>Soluções Web</h3>
+            <img src="img/solucoes.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            
+            <p>Ut enim ad minim veniam, quis nostrud. Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+            
+            <a href="#" class="botao">Saiba mais</a>
+        </section>
+        
+        <section class="coluna" data-aos="fade-up" data-aos-delay="600">
+            <h3>Depoimentos</h3>
+            <img src="img/depoimentos.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            
+            <p>Ut enim ad minim veniam, quis nostrud. Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+            
+            
+            <a href="#" class="botao">Saiba mais</a>
+            
+        </section>
+        
+    </div>
+    
+    <footer id="rodape">
+        
+        <div class="container flex-rodape">
+            
+            <section id="conhecer">       
+                <h4>Venha nos conhecer</h4> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqui.</p>
+                
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est </p>
+            </section>
+            
+            <section id="newsletter">       
+                <h4>Assine nossa NewsLetter</h4>
+                
+                <form>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome">
+
+                    <br>
+
+                    <label for="email">E-mail:</label><br>
+                    <input type="text" id="email">                
+                    <br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+           
+            </section>
+            
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
